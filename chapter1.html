@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1 - Creating Our First Website</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 2rem;
+            margin-top: 2em;
+        }
+
+        h3 {
+            color: #ffa500;
+            font-size: 1.5rem;
+            margin-top: 1.5em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 1em;
+        }
+
+        pre {
+            background-color: #111;
+            color: #0f0;
+            padding: 1em;
+            border-radius: 6px;
+            font-family: monospace;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        strong {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Chapter 1 - Creating Our First Website</h2>
+
+    <p>
+        We start by creating a file named <strong>index.html</strong>. This is a special filename — it's the default
+        page shown when someone visits your website’s root.
+    </p>
+
+    <h3>A Basic HTML Page (with Explanation)</h3>
+
+    <pre>
+&lt;!DOCTYPE html&gt;            → Specifies this is an HTML5 document
+&lt;html lang="en"&gt;         → Root of an HTML page
+  &lt;head&gt;                   → Contains metadata about the page
+    &lt;meta charset="UTF-8"&gt;    → Character encoding
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; → Responsive design
+    &lt;title&gt;Document&lt;/title&gt; → Sets the page title (shown in the browser tab)
+  &lt;/head&gt;
+  &lt;body&gt;                   → Main content visible in the browser
+    &lt;h1&gt;This is a heading&lt;/h1&gt; → A top-level heading
+    &lt;p&gt;My paragraph&lt;/p&gt;       → A paragraph of text
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <p>
+        A tag is like a container for either content or other HTML tags!
+
+        HTML Document → Browser → Rendered Page
+    </p>
+    <h3 style="color: red;">Important Notes</h3>
+    <p>
+        → head & body tags are children of HTML tag.
+        <br>
+        → HTML is the parent of head & body tags.
+        <br>
+        → Most of the HTML elements have opening & closing tag with content in between opening & closing tags.
+        <br>
+        → Some HTML tags have no content. These are called <strong>EMPTY ELEMENTS</strong>
+        <br>
+        → We can either use .htm or .html extension
+        <br>
+        → You can use "Inspect Element" or "View Page Source" option from chrome to look into a website's HTML Code!
+        <br>
+        HTML element = Start tag + Content + End tag
+    </p>
+    <h3>Comments in HTML</h3>
+    <p>
+        Comments in HTML are used to mark text that should not be rendered by the browser. They help document the source
+        code and make it easier to understand.
+    </p>
+    <pre>
+&lt;!-- This is an HTML comment --&gt;
+</pre>
+    <h3>Case Sensitivity</h3>
+    <p>
+        HTML is a case-insensitive language, which means tags like <code>&lt;h1&gt;</code> and <code>&lt;H1&gt;</code>
+        are treated the same by the browser.
+    </p>
+
+    <pre>
+&lt;h1&gt; and &lt;H1&gt; are the same!
+</pre>
+<h2>Chapter 1 - Practice Set</h2>
+
+<ol>
+  <li>
+    <strong>Inspect your favourite website and change something on the page which is displayed.</strong>
+    <p>
+      You can right-click on a webpage and select <em>“Inspect”</em> or press <code>Ctrl + Shift + I</code> to open Developer Tools. In the <code>Elements</code> tab, you can change text, colors, or even remove elements. 
+      <br>
+      <strong>Note:</strong> These changes are only temporary and local — they disappear when you refresh the page.
+    </p>
+  </li>
+
+  <li>
+    <strong>Go to your favourite website and try to view the page source. Write the exact lines of code. Does it clone the website? Why?</strong>
+    <p>
+      Right-click and choose <em>“View Page Source”</em> or press <code>Ctrl + U</code> to see the HTML. You can copy this into your own <code>.html</code> file.
+      <br><br>
+      However, <strong>it won’t fully clone the website</strong> because:
+      <ul>
+        <li>Many assets like images, stylesheets, and JavaScript files are hosted elsewhere.</li>
+        <li>Dynamic parts of the site (like content loaded via JavaScript) don’t appear in the raw HTML.</li>
+        <li>Some websites use frameworks that generate the page after it's loaded — that code won't be visible in the source.</li>
+      </ul>
+    </p>
+  </li>
+
+  <li>
+    <strong>Write any HTML code inside a text file. Does it work if you write it using Notepad?</strong>
+    <p>
+      Yes! HTML can be written in any text editor, including Notepad. Just make sure to save the file with a <code>.html</code> extension, for example: <code>index.html</code>.
+      <br><br>
+      Once saved, you can double-click the file to open it in your browser.
+    </p>
+  </li>
+</ol>
+
+</body>
+
+</html>

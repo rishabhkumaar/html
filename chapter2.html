@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 2 - Basic HTML Tags</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 2rem;
+            margin-top: 2em;
+        }
+
+        h3 {
+            color: #ffa500;
+            font-size: 1.5rem;
+            margin-top: 1.5em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 1em;
+        }
+
+        pre {
+            background-color: #111;
+            color: #0f0;
+            padding: 1em;
+            border-radius: 6px;
+            font-family: monospace;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        code {
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Chapter 2 - Basic HTML Tags</h2>
+
+    <p>We can add elements inside the body tag to define the page layout.</p>
+
+    <h3>HTML Element</h3>
+    <p>Everything from the starting to the ending tag.</p>
+    <pre>
+&lt;body&gt; → Opening Tag
+→Content←
+&lt;/body&gt; → Closing Tag
+</pre>
+
+    <h3>HTML Attribute</h3>
+    <p>
+        Used to add more information corresponding to an HTML tag.
+        <br>Example:
+    </p>
+    <pre>&lt;a href="https://rizzhub.kr.netlify.app"&gt;Rishabh&lt;/a&gt;</pre>
+    <p>We can either use single or double quotes in attributes.</p>
+
+    <h3>The Heading Tag</h3>
+    <p>Heading tags are used to mark headings in HTML. From <code>h1</code> to <code>h6</code>, we have tags for the
+        most important to the least important heading.</p>
+    <pre>
+&lt;h1&gt;"h1" Heading Tag&lt;/h1&gt;
+&lt;h2&gt;"h2" Heading Tag&lt;/h2&gt;
+&lt;h3&gt;"h3" Heading Tag&lt;/h3&gt;
+&lt;h4&gt;"h4" Heading Tag&lt;/h4&gt;
+&lt;h5&gt;"h5" Heading Tag&lt;/h5&gt;
+&lt;h6&gt;"h6" Heading Tag&lt;/h6&gt;
+</pre>
+    <p style="color: red;">Note: We should not use HTML headings to make text <strong
+            style="color: rgb(46, 14, 161);">bold</strong>.</p>
+
+    <h3>The Paragraph Tag</h3>
+    <p>Paragraph tags are used to add paragraphs to an HTML page.</p>
+    <pre>&lt;p&gt;This is a paragraph&lt;/p&gt;</pre>
+
+    <h3>The Anchor Tag</h3>
+    <p>The anchor tag is used to add links to content inside an HTML page.</p>
+    <pre>&lt;a href="https://google.com"&gt;Click Me&lt;/a&gt;</pre>
+
+    <h3>The <code>img</code> Tag</h3>
+    <p>The <code>img</code> tag is used to add images in an HTML page.</p>
+    <pre>&lt;img src="image.jpg" alt="Image description"&gt;</pre>
+
+    <h3>Bold, Italic and Underline Tags</h3>
+    <p>We can use bold, italic, and underline tags to highlight text as follows:</p>
+    <pre>
+&lt;b&gt;This is bold&lt;/b&gt;
+&lt;i&gt;This is italic&lt;/i&gt;
+&lt;u&gt;This is underline&lt;/u&gt;
+</pre>
+
+    <h3>The <code>br</code> Tag</h3>
+    <p>The <code>br</code> tag is used to create line breaks in an HTML document.</p>
+
+    <h3>The <code>big</code> and <code>small</code> Tags</h3>
+    <p>We can make the text a bit larger or smaller using <code>big</code> and <code>small</code> tags respectively.</p>
+    <pre>
+&lt;big&gt;This is big&lt;/big&gt;
+&lt;small&gt;This is small&lt;/small&gt;
+</pre>
+
+    <h3>Subscript and Superscript</h3>
+    <p>We can add subscript and superscript in HTML as follows:</p>
+    <pre>
+&lt;sub&gt;This is Subscript&lt;/sub&gt;
+&lt;sup&gt;This is Superscript&lt;/sup&gt;
+</pre>
+    <sub>This</sub> is subscript &
+    <sup>This</sup> is superscript
+
+    <h3>The <code>pre</code> Tag</h3>
+    <p>HTML always ignores extra spaces and newlines. To display text exactly as written, we use the <code>pre</code>
+        tag.</p>
+    <pre>
+&lt;pre&gt;
+    This    is  written
+    using pre
+    tag
+&lt;/pre&gt;
+</pre>
+<h2>Chapter 2 - Practice Set</h2>
+
+<ol>
+  <li>
+    <strong>Create an HTML page with a heading (title heading), a primary heading and a subheading. Which tags did you use?</strong>
+    <p>
+      For the page, I used the following HTML tags:
+      <ul>
+        <li><code>&lt;title&gt;</code> for the browser title bar</li>
+        <li><code>&lt;h1&gt;</code> for the primary heading</li>
+        <li><code>&lt;h3&gt;</code> for the subheading</li>
+      </ul>
+      Here’s an example:
+    </p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Title Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is the Main Heading&lt;/h1&gt;
+  &lt;h3&gt;This is the Subheading&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  </li>
+
+  <li>
+    <strong>Create a page with 5 wallpaper images taken from the internet.</strong>
+    <p>
+      You can use the <code>&lt;img&gt;</code> tag with direct image URLs from the internet. Example:
+    </p>
+    <pre>
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper1" alt="Wallpaper 1"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper2" alt="Wallpaper 2"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper3" alt="Wallpaper 3"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper4" alt="Wallpaper 4"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper5" alt="Wallpaper 5"&gt;
+</pre>
+  </li>
+
+  <li>
+    <strong>Use <code>br</code> and <code>hr</code> tags to display a piece of text with line breaks.</strong>
+    <p>
+      You can use <code>&lt;br&gt;</code> for a new line and <code>&lt;hr&gt;</code> to insert a horizontal line.
+    </p>
+    <pre>
+This is line one.&lt;br&gt;
+This is line two.&lt;br&gt;
+&lt;hr&gt;
+This is after the horizontal line.
+</pre>
+  </li>
+
+  <li>
+    <strong>Try to write the following chemical equation using HTML: C + O<sub>2</sub> → CO<sub>2</sub></strong>
+    <p>Use the <code>&lt;sub&gt;</code> tag to write subscripts:</p>
+    <pre>
+C + O&lt;sub&gt;2&lt;/sub&gt; → CO&lt;sub&gt;2&lt;/sub&gt;
+</pre>
+    <p><strong>Output:</strong> C + O<sub>2</sub> → CO<sub>2</sub></p>
+  </li>
+
+  <li>
+    <strong>Try to write a Wikipedia-like article using HTML.</strong>
+    <p>Here's a basic example of a Wikipedia-style article:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Albert Einstein - Wikipedia&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Albert Einstein&lt;/h1&gt;
+  &lt;p&gt;Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics.&lt;/p&gt;
+  &lt;h2&gt;Early Life&lt;/h2&gt;
+  &lt;p&gt;Einstein was born in the Kingdom of Württemberg in the German Empire on 14 March 1879.&lt;/p&gt;
+  &lt;h2&gt;Contributions&lt;/h2&gt;
+  &lt;p&gt;Einstein is best known for his equation E = mc&lt;sup&gt;2&lt;/sup&gt; and for winning the Nobel Prize in Physics in 1921.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  </li>
+</ol>
+
+</body>
+
+</html>

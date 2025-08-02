@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 - Lists, Tables & Forms</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 2rem;
+            margin-top: 2em;
+        }
+
+        h3 {
+            color: #ffa500;
+            font-size: 1.5rem;
+            margin-top: 1.5em;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 1em;
+        }
+
+        pre {
+            background-color: #111;
+            color: #0f0;
+            padding: 1em;
+            border-radius: 6px;
+            font-family: monospace;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        code {
+            color: cyan;
+        }
+
+        .note {
+            color: red;
+            font-style: italic;
+            margin-top: 1em;
+        }
+
+        iframe,
+        video {
+            max-width: 100%;
+            margin-top: 1em;
+            display: block;
+        }
+
+        form {
+            background-color: #111;
+            padding: 1rem;
+            border: 1px solid #333;
+            max-width: 400px;
+            margin-top: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            color: #ccc;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.4rem;
+            margin-top: 0.3rem;
+            background: #222;
+            color: #ccc;
+            border: 1px solid #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #222;
+            color: #0ff;
+        }
+
+        td {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Chapter 4 - Lists, Tables & Forms</h2>
+
+    <h3>Lists</h3>
+    <p>Lists are used to display content that represents a group of related items.</p>
+
+    <h3>Unordered List</h3>
+    <p>Used to list unordered items:</p>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Home&lt;/li&gt;
+    &lt;li&gt;About&lt;/li&gt;
+&lt;/ul&gt;    </pre>
+
+    <h3>Tables</h3>
+    <p>The <code>&lt;table&gt;</code> tag is used to define tables in HTML. It is used to format and display tabular
+        data.</p>
+    <ul>
+        <li><code>&lt;tr&gt;</code> – defines a table row</li>
+        <li><code>&lt;td&gt;</code> – defines table data (cell)</li>
+        <li><code>&lt;th&gt;</code> – defines a table header (cell)</li>
+        <li><code>&lt;caption&gt;</code> – adds a caption/title to the table</li>
+        <li><code>&lt;thead&gt;</code> – wraps the header section of a table</li>
+        <li><code>&lt;tbody&gt;</code> – wraps the body section of a table</li>
+    </ul>
+
+    <h3>Colspan Attribute</h3>
+    <p>This attribute is used to create cells spanning multiple columns:</p>
+    <pre>&lt;th colspan="3"&gt;Harry&lt;/th&gt;  → Spans 3 columns</pre>
+
+    <h3>HTML Forms</h3>
+    <p>An HTML form is used to collect input from the user. The <code>&lt;form&gt;</code> tag is used for this purpose:
+    </p>
+    <pre>
+&lt;form&gt;
+    --Elements of the Form--
+&lt;/form&gt;</pre>
+    <p>There are different form elements for different types of user input:</p>
+    <ul>
+        <li><strong>Input element</strong>: can be of types like text, checkbox, radio, button, submit, or file</li>
+        <li><strong>Textarea element</strong>: defines a multi-line text input; <code>cols</code> and <code>rows</code>
+            attributes control the size</li>
+        <li><strong>Select element</strong>: defines a dropdown list</li>
+    </ul>
+
+    <div class="note">
+        Note: You don't have to remember all the tags; with practice, you'll memorize them naturally.
+    </div>
+
+    <h3>Embedding Videos</h3>
+    <p>The <code>&lt;video&gt;</code> tag is used to play videos in HTML:</p>
+    <pre>&lt;video src="video.mp4" controls&gt;Your browser does not support the video tag.&lt;/video&gt;</pre>
+
+    <h3>Attributes for Video</h3>
+    <p>You can use the following attributes with the <code>&lt;video&gt;</code> tag:</p>
+    <ul>
+        <li><code>width</code> – Adjusts the width of the video (height adjusts automatically)</li>
+        <li><code>autoplay</code>, <code>loop</code>, <code>controls</code> – Add behavior like autoplaying, looping, or
+            showing controls</li>
+    </ul>
+
+    <h2>Chapter 4 - Practice Set</h2>
+    <p>
+        1. Create an HTML page with video embedded inside it.<br>
+        2. Replace this video in 1 with a YouTube video.<br>
+        3. Create an HTML form for a travel website to book a vacation.<br>
+        4. Create a table displaying score of players in a match using HTML.
+    </p>
+
+    <h3>Practice 1: Embedded Video</h3>
+    <video src="video.mp4" controls width="500">
+        Your browser does not support the video tag.
+    </video>
+    <pre>&lt;video src="video.mp4" controls width="500"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</pre>
+
+    <h3>Practice 2: YouTube Embedded Video</h3>
+    <iframe src="https://www.youtube.com/embed/E0YTfOhBvlA?si=YaJEunyOw6If1tro" allowfullscreen></iframe>
+    <pre>&lt;iframe src="https://www.youtube.com/embed/E0YTfOhBvlA?si=YaJEunyOw6If1tro" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+    <h3>Practice 3: Travel Booking Form</h3>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination">
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+            <option value="newyork">New York</option>
+        </select>
+
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4"></textarea>
+
+        <input type="submit" value="Book Now" style="margin-top: 1rem;">
+    </form>
+    <pre>&lt;form&gt;
+    &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+
+    &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;label for="destination"&gt;Destination:&lt;/label&gt;
+    &lt;select id="destination" name="destination"&gt;
+        &lt;option value="paris"&gt;Paris&lt;/option&gt;
+        &lt;option value="tokyo"&gt;Tokyo&lt;/option&gt;
+        &lt;option value="london"&gt;London&lt;/option&gt;
+        &lt;option value="newyork"&gt;New York&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for="date"&gt;Travel Date:&lt;/label&gt;
+    &lt;input type="date" id="date" name="date"&gt;
+
+    &lt;label for="requests"&gt;Special Requests:&lt;/label&gt;
+    &lt;textarea id="requests" name="requests" rows="4"&gt;&lt;/textarea&gt;
+
+    &lt;input type="submit" value="Book Now" style="margin-top: 1rem;"&gt;
+&lt;/form&gt;
+</pre>
+
+    <h3>Practice 4: Player Score Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Runs</th>
+                <th>Wickets</th>
+                <th>Strike Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Virat Kohli</td>
+                <td>82</td>
+                <td>0</td>
+                <td>140.3</td>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>64</td>
+                <td>0</td>
+                <td>128.5</td>
+            </tr>
+            <tr>
+                <td>Hardik Pandya</td>
+                <td>47</td>
+                <td>2</td>
+                <td>135.0</td>
+            </tr>
+            <tr>
+                <td>Jasprit Bumrah</td>
+                <td>12</td>
+                <td>3</td>
+                <td>60.0</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Player&lt;/th&gt;
+            &lt;th&gt;Runs&lt;/th&gt;
+            &lt;th&gt;Wickets&lt;/th&gt;
+            &lt;th&gt;Strike Rate&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Virat Kohli&lt;/td&gt;
+            &lt;td&gt;82&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;140.3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rohit Sharma&lt;/td&gt;
+            &lt;td&gt;64&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;128.5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Hardik Pandya&lt;/td&gt;
+            &lt;td&gt;47&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;135.0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jasprit Bumrah&lt;/td&gt;
+            &lt;td&gt;12&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;60.0&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+</body>
+
+</html>
