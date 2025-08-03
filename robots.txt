@@ -1,0 +1,7 @@
+# robots.txt for rishabhkumaar.github.io/html/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://rishabhkumaar.github.io/html/sitemap.xml
+Host: https://rishabhkumaar.github.io/html
