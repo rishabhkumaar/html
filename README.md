@@ -40,7 +40,7 @@ Each chapter is well-organized and scroll-navigable:
 
 | Main Page | Scrollspy Sidebar | Quote |
 |----------|------------------|------------|
-| ![main](main.png) | ![sidebar](sidebar.png) | ![quote](quote.png) |
+| ![main](resources/main.png) | ![sidebar](resources/sidebar.png) | ![quote](resources/quote.png) |
 
 ---
 
