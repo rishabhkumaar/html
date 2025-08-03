@@ -6,7 +6,7 @@ A modern, responsive, and interactive **HTML5 Learning Dashboard** built by **Ri
 
 ## 🌐 Live Preview
 
-[🔗 View Live Demo](https://github.com/rishabhkumaar/html)
+[🔗 View Live Demo](https://rishabhkumaar.github.io/html/)
 
 ---
 
