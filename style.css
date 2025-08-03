@@ -1,0 +1,252 @@
+/* ========================
+   Optimized & Responsive Styling
+   ======================== */
+
+/* Background Section */
+.background-image {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: url('background.jpg') center/cover no-repeat fixed;
+  z-index: 0;
+}
+
+/* Quote Section */
+.quote {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  font-family: 'Fira Code', monospace;
+  padding: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .quote {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .background-image {
+    background-attachment: scroll;
+  }
+}
+
+/* Scrollable Section */
+.scrollspy-example-2 {
+  height: 85vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Base Styles */
+body {
+  background-color: #000;
+  color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h2, h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+h2 {
+  color: #00ffff;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #ffa500;
+  font-size: 1.6rem;
+}
+
+p, li {
+  font-size: 1rem;
+  margin-top: 1em;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+pre {
+  background-color: #111;
+  color: #0f0;
+  padding: 1em;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+code {
+  color: cyan;
+  background: #111;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+strong {
+  color: #fff;
+}
+
+.note {
+  color: cyan;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+iframe,
+video {
+  max-width: 100%;
+  margin-top: 1em;
+  display: block;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Form Styling */
+form {
+  background-color: #111;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  max-width: 100%;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  background: #222;
+  color: #ccc;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #222;
+  color: #0ff;
+  font-weight: 600;
+}
+
+td {
+  background-color: #111;
+}
+
+/* Responsive Container */
+.container-fluid, .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Utility Classes */
+.text-glow {
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+/* About section styles - Dark Theme */
+.about {
+  padding: 4rem 2rem;
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  border-top: 8px solid #00ffff;
+  border-bottom: 8px solid #00ffff;
+}
+
+.about__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2rem;
+  color: #0ff;
+  position: relative;
+  text-shadow: 0 0 8px #0ff;
+}
+
+.about__title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #0ff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 6px #0ff;
+}
+
+.about__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about__photo img {
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about__photo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.8);
+}
+
+.about__description {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about__description p {
+  margin-bottom: 1.2rem;
+}

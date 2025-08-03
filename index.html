@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rishabh's Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .background-image {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      z-index: 0;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: clamp(1.5rem, 5vw, 3.5rem);
+      font-family: 'Fira Code', monospace;
+      padding: 1.5rem 2rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      max-width: 90%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 576px) {
+      .quote {
+        padding: 1rem;
+        font-size: 1.8rem;
+      }
+
+      .background-image {
+        background-attachment: scroll;
+      }
+    }
+
+    .scrollspy-example-2 {
+      height: 500px;
+      overflow: auto;
+      padding-right: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary shadow-sm">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="rishabh.png" alt="Rishabh's Logo" width="40" height="40" class="rounded-circle shadow-sm" />
+          <span class="fw-bold fs-5 text-primary">Rishabh's Dashboard</span>
+        </a>
+        <div class="d-flex gap-3">
+          <a href="https://www.linkedin.com/in/rishabhkumaar" target="_blank" class="text-dark" title="LinkedIn"><i
+              class="bi bi-linkedin fs-4"></i></a>
+          <a href="https://www.instagram.com/rishabhkumaaaar" target="_blank" class="text-dark" title="Instagram"><i
+              class="bi bi-instagram fs-4"></i></a>
+          <a href="https://www.youtube.com/@rishabhkumaar" target="_blank" class="text-dark" title="YouTube"><i
+              class="bi bi-youtube fs-4"></i></a>
+          <a href="https://leetcode.com/rishabhkumaar" target="_blank" class="text-dark" title="LeetCode"><i
+              class="bi bi-code-slash fs-4"></i></a>
+          <a href="https://github.com/rishabhkumaar" target="_blank" class="text-dark" title="GitHub"><i
+              class="bi bi-github fs-4"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="about">
+      <h2 class="about__title">About the Developer</h2>
+      <div class="about__info">
+        <div class="about__photo">
+          <img src="rishabh.jpg" alt="Developer's Photo">
+        </div>
+        <div class="about__description">
+          <p>Hi! If you’re seeing this, you probably know me. I’m Rishabh Kumar, a BTech CSE student with a growing
+            interest in Computer technology. I’m on a journey of skill development and self-improvement, trying to
+            balance my academic pursuits with my other passions.</p>
+          <p>I love reading and have a deep passion for aviation, which keeps me motivated to keep learning and growing.
+            I know there’s still a long way to go, but I try to embrace every challenge that comes my way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="background-image">
+      <div class="quote">
+        "Code is poetry written by developers."
+      </div>
+    </section>
+
+    <!-- Scrollspy Layout -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-4 mb-4">
+          <div id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+
+              <!-- Chapter 0 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start">
+                  BASIC HTML
+                </button>
+              </div>
+
+              <!-- Chapter 0 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter0Collapse" aria-expanded="true" aria-controls="chapter0Collapse">
+                  Chapter 0 - Introduction
+                </button>
+                <div class="collapse show" id="chapter0Collapse">
+                  <a class="nav-link ms-3 my-1" href="#html-section">HTML → HyperText Markup Language</a>
+                  <a class="nav-link ms-3 my-1" href="#why-css-js">Why Do We Need CSS and JavaScript?</a>
+                  <a class="nav-link ms-3 my-1" href="#install-vscode">Installing VS Code</a>
+                </div>
+              </div>
+
+              <!-- Chapter 1 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter1Collapse" aria-expanded="true" aria-controls="chapter1Collapse">
+                  Chapter 1 - Creating Our First Website
+                </button>
+                <div class="collapse show" id="chapter1Collapse">
+                  <a class="nav-link ms-3 my-1" href="#html-page">A Basic HTML Page</a>
+                  <a class="nav-link ms-3 my-1" href="#comments-in-html">Comments in HTML</a>
+                  <a class="nav-link ms-3 my-1" href="#case-sensitivity">Case Sensitivity</a>
+                  <a class="nav-link ms-3 my-1" href="#chapter-1-practice-set">Chapter 1 - Practice Set</a>
+                </div>
+              </div>
+
+              <!-- Chapter 2 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter2Collapse" aria-expanded="true" aria-controls="chapter2Collapse">
+                  Chapter 2 - Basic HTML Tags
+                </button>
+                <div class="collapse show" id="chapter2Collapse">
+                  <a class="nav-link ms-3 my-1" href="#html-element">HTML Element</a>
+                  <a class="nav-link ms-3 my-1" href="#html-attribute">HTML Attribute</a>
+                  <a class="nav-link ms-3 my-1" href="#heading-tag">The Heading Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#paragraph-tag">The Paragraph Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#anchor-tag">The Anchor Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#img-tag">The img Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#text-formatting">Bold, Italic and Underline Tags</a>
+                  <a class="nav-link ms-3 my-1" href="#br-tag">The br Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#big-small-tags">The big and small Tags</a>
+                  <a class="nav-link ms-3 my-1" href="#sub-sup-tags">Subscript and Superscript</a>
+                  <a class="nav-link ms-3 my-1" href="#pre-tag">The pre Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#chapter-2-practice-set">Chapter 2 - Practice Set</a>
+                </div>
+              </div>
+
+              <!-- Chapter 3 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter3Collapse" aria-expanded="true" aria-controls="chapter3Collapse">
+                  Chapter 3 - Creating a Page Layout
+                </button>
+                <div class="collapse show" id="chapter3Collapse">
+                  <a class="nav-link ms-3 my-1" href="#website-layout">Website Layout</a>
+                  <a class="nav-link ms-3 my-1" href="#main-tag">Inside the &lt;main&gt; Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#link-attributes">Link Attributes</a>
+                  <a class="nav-link ms-3 my-1" href="#div-tag">The &lt;div&gt; Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#span-tag">The &lt;span&gt; Tag</a>
+                  <a class="nav-link ms-3 my-1" href="#chapter-3-practice-set">Chapter 3 - Practice Set</a>
+                </div>
+              </div>
+
+              <!-- Chapter 4 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter4Collapse" aria-expanded="true" aria-controls="chapter4Collapse">
+                  Chapter 4 - Lists, Tables & Forms
+                </button>
+                <div class="collapse show" id="chapter4Collapse">
+                  <a class="nav-link ms-3 my-1" href="#lists">Lists</a>
+                  <a class="nav-link ms-3 my-1" href="#unordered-list">Unordered List</a>
+                  <a class="nav-link ms-3 my-1" href="#tables">Tables</a>
+                  <a class="nav-link ms-3 my-1" href="#colspan-attribute">Colspan Attribute</a>
+                  <a class="nav-link ms-3 my-1" href="#html-forms">HTML Forms</a>
+                  <a class="nav-link ms-3 my-1" href="#embedding-videos">Embedding Videos</a>
+                  <a class="nav-link ms-3 my-1" href="#video-attributes">Attributes for Video</a>
+                  <a class="nav-link ms-3 my-1" href="#chapter-4-practice-set">Chapter 4 - Practice Set</a>
+                </div>
+              </div>
+
+              <!-- Chapter 5 -->
+              <div class="mb-2">
+                <button class="btn btn-sm btn-outline-primary w-100 text-start" data-bs-toggle="collapse"
+                  data-bs-target="#chapter5Collapse" aria-expanded="true" aria-controls="chapter5Collapse">
+                  Chapter 5 - HTML & SEO
+                </button>
+                <div class="collapse show" id="chapter5Collapse">
+                  <a class="nav-link ms-3 my-1" href="#chapter-5">Overview</a>
+                  <a class="nav-link ms-3 my-1" href="#types-of-seo">Types of SEO</a>
+                  <a class="nav-link ms-3 my-1" href="#html-onpage-seo">HTML Techniques for On-Page SEO</a>
+                </div>
+              </div>
+
+            </nav>
+          </div>
+        </div>
+
+
+        <!-- Content -->
+        <div class="col-md-8">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+            class="scrollspy-example-2" tabindex="0">
+
+            <!-- Chapter 0 -->
+            <div id="chapter-0">
+              <h2>Chapter 0 - Introduction</h2>
+            </div>
+
+            <div id="html-section">
+              <h3>HTML → HyperText Markup Language</h3>
+              <p>
+                HTML is the language of the web. It is used to create the structure of websites.
+                We use HTML tags to define the layout and content of a page.
+              </p>
+              <p>
+                With a good understanding of these tags and how to use them together, we can build beautiful and
+                functional
+                websites!
+              </p>
+            </div>
+
+            <div id="why-css-js">
+              <h3>Why Do We Need CSS and JavaScript?</h3>
+              <p>
+                HTML provides the bare structure of a page — like the skeleton of a house.
+              </p>
+              <p>
+                CSS (Cascading Style Sheets) is used to style that structure — changing colors, layouts, fonts, and
+                more.
+              </p>
+              <p>
+                JavaScript brings the page to life. It allows us to add interactivity — like responding to clicks,
+                showing
+                or
+                hiding elements, animations, and more.
+              </p>
+              <h3>A Simple Analogy</h3>
+              <p>
+                <strong>HTML</strong> → The car's chassis and frame — the basic structure.<br />
+                <strong>CSS</strong> → The car's paint and design — how it looks and feels.<br />
+                <strong>JavaScript</strong> → The engine and electronics — how it behaves and responds.
+              </p>
+              <p>
+                In this course, we’ll start by learning how to create solid page structures using HTML, and then we’ll
+                style and
+                power them using CSS and JavaScript.
+              </p>
+            </div>
+
+            <div id="install-vscode">
+              <h3>Installing VS Code</h3>
+              <p>
+                You can use any text editor to write HTML. In this course, we’ll use <strong>Visual Studio Code</strong>
+                because
+                it's lightweight, open-source, and developed by Microsoft.
+              </p>
+              <p>
+                To install it, just go to Google, search for “VS Code,” and download it from the official website.
+              </p>
+              <p style="color: red; font-size: large; padding-bottom: 0;">
+                Note:
+              </p>
+              <p style="padding-top: 0;">
+                Even Notepad can be used to write HTML, but editors like VS Code make the process much easier and more
+                efficient.
+              </p>
+            </div>
+
+            <!-- Remaining Sections -->
+            <div id="chapter-1">
+
+              <p>
+                We start by creating a file named <strong>index.html</strong>. This is a special filename — it's the
+                default
+                page shown when someone visits your website’s root.
+              </p>
+              <div id="html-page">
+                <h3>A Basic HTML Page (with Explanation)</h3>
+
+                <pre>
+&lt;!DOCTYPE html&gt;            → Specifies this is an HTML5 document
+&lt;html lang="en"&gt;         → Root of an HTML page
+  &lt;head&gt;                   → Contains metadata about the page
+    &lt;meta charset="UTF-8"&gt;    → Character encoding
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; → Responsive design
+    &lt;title&gt;Document&lt;/title&gt; → Sets the page title (shown in the browser tab)
+  &lt;/head&gt;
+  &lt;body&gt;                   → Main content visible in the browser
+    &lt;h1&gt;This is a heading&lt;/h1&gt; → A top-level heading
+    &lt;p&gt;My paragraph&lt;/p&gt;       → A paragraph of text
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+                <p>
+                  A tag is like a container for either content or other HTML tags!
+
+                  HTML Document → Browser → Rendered Page
+                </p>
+                <h3 style="color: red;">Important Notes</h3>
+                <p>
+                  → head & body tags are children of HTML tag.
+                  <br>
+                  → HTML is the parent of head & body tags.
+                  <br>
+                  → Most of the HTML elements have opening & closing tag with content in between opening & closing tags.
+                  <br>
+                  → Some HTML tags have no content. These are called <strong>EMPTY ELEMENTS</strong>
+                  <br>
+                  → We can either use .htm or .html extension
+                  <br>
+                  → You can use "Inspect Element" or "View Page Source" option from chrome to look into a website's HTML
+                  Code!
+                  <br>
+                  HTML element = Start tag + Content + End tag
+                </p>
+              </div>
+              <div id="comments-in-html">
+                <h3>Comments in HTML</h3>
+                <p>
+                  Comments in HTML are used to mark text that should not be rendered by the browser. They help document
+                  the source
+                  code and make it easier to understand.
+                </p>
+                <pre>
+&lt;!-- This is an HTML comment --&gt;
+</pre>
+              </div>
+              <div id="case-sensitivity">
+                <h3>Case Sensitivity</h3>
+                <p>
+                  HTML is a case-insensitive language, which means tags like <code>&lt;h1&gt;</code> and
+                  <code>&lt;H1&gt;</code>
+                  are treated the same by the browser.
+                </p>
+
+                <pre>
+&lt;h1&gt; and &lt;H1&gt; are the same!
+</pre>
+              </div>
+              <div id="chapter-1-practice-set">
+                <h2>Chapter 1 - Practice Set</h2>
+
+                <ol>
+                  <li>
+                    <strong>Inspect your favourite website and change something on the page which is displayed.</strong>
+                    <p>
+                      You can right-click on a webpage and select <em>“Inspect”</em> or press
+                      <code>Ctrl + Shift + I</code> to open Developer Tools. In the <code>Elements</code> tab, you can
+                      change text, colors, or even remove elements.
+                      <br>
+                      <strong>Note:</strong> These changes are only temporary and local — they disappear when you
+                      refresh
+                      the page.
+                    </p>
+                  </li>
+
+                  <li>
+                    <strong>Go to your favourite website and try to view the page source. Write the exact lines of code.
+                      Does it clone the website? Why?</strong>
+                    <p>
+                      Right-click and choose <em>“View Page Source”</em> or press <code>Ctrl + U</code> to see the HTML.
+                      You can copy this into your own <code>.html</code> file.
+                      <br><br>
+                      However, <strong>it won’t fully clone the website</strong> because:
+                    <ul>
+                      <li>Many assets like images, stylesheets, and JavaScript files are hosted elsewhere.</li>
+                      <li>Dynamic parts of the site (like content loaded via JavaScript) don’t appear in the raw HTML.
+                      </li>
+                      <li>Some websites use frameworks that generate the page after it's loaded — that code won't be
+                        visible in the source.</li>
+                    </ul>
+                    </p>
+                  </li>
+
+                  <li>
+                    <strong>Write any HTML code inside a text file. Does it work if you write it using Notepad?</strong>
+                    <p>
+                      Yes! HTML can be written in any text editor, including Notepad. Just make sure to save the file
+                      with
+                      a <code>.html</code> extension, for example: <code>index.html</code>.
+                      <br><br>
+                      Once saved, you can double-click the file to open it in your browser.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+
+            <!-- Chapter 2 Content -->
+            <div id="chapter-2" class="pt-5">
+              <h2>Chapter 2 - Basic HTML Tags</h2>
+              <p>We can add elements inside the body tag to define the page layout.</p>
+
+              <div id="html-element" class="pt-4">
+                <h3>HTML Element</h3>
+                <p>Everything from the starting to the ending tag.</p>
+                <pre>
+&lt;body&gt; → Opening Tag
+→Content←
+&lt;/body&gt; → Closing Tag
+</pre>
+              </div>
+
+              <div id="html-attribute" class="pt-4">
+                <h3>HTML Attribute</h3>
+                <p>
+                  Used to add more information corresponding to an HTML tag.
+                  <br>Example:
+                </p>
+                <pre>&lt;a href="https://rizzhub.kr.netlify.app"&gt;Rishabh&lt;/a&gt;</pre>
+                <p>We can either use single or double quotes in attributes.</p>
+              </div>
+
+              <div id="heading-tag" class="pt-4">
+                <h3>The Heading Tag</h3>
+                <p>Heading tags are used to mark headings in HTML. From <code>h1</code> to <code>h6</code>, we have tags
+                  for
+                  the
+                  most important to the least important heading.</p>
+                <pre>
+&lt;h1&gt;"h1" Heading Tag&lt;/h1&gt;
+&lt;h2&gt;"h2" Heading Tag&lt;/h2&gt;
+&lt;h3&gt;"h3" Heading Tag&lt;/h3&gt;
+&lt;h4&gt;"h4" Heading Tag&lt;/h4&gt;
+&lt;h5&gt;"h5" Heading Tag&lt;/h5&gt;
+&lt;h6&gt;"h6" Heading Tag&lt;/h6&gt;
+</pre>
+                <p style="color: red;">Note: We should not use HTML headings to make text <strong
+                    style="color: rgb(46, 14, 161);">bold</strong>.</p>
+              </div>
+
+              <div id="paragraph-tag" class="pt-4">
+                <h3>The Paragraph Tag</h3>
+                <p>Paragraph tags are used to add paragraphs to an HTML page.</p>
+                <pre>&lt;p&gt;This is a paragraph&lt;/p&gt;</pre>
+              </div>
+
+              <div id="anchor-tag" class="pt-4">
+                <h3>The Anchor Tag</h3>
+                <p>The anchor tag is used to add links to content inside an HTML page.</p>
+                <pre>&lt;a href="https://google.com"&gt;Click Me&lt;/a&gt;</pre>
+              </div>
+
+              <div id="img-tag" class="pt-4">
+                <h3>The <code>img</code> Tag</h3>
+                <p>The <code>img</code> tag is used to add images in an HTML page.</p>
+                <pre>&lt;img src="image.jpg" alt="Image description"&gt;</pre>
+              </div>
+
+              <div id="text-formatting" class="pt-4">
+                <h3>Bold, Italic and Underline Tags</h3>
+                <p>We can use bold, italic, and underline tags to highlight text as follows:</p>
+                <pre>
+&lt;b&gt;This is bold&lt;/b&gt;
+&lt;i&gt;This is italic&lt;/i&gt;
+&lt;u&gt;This is underline&lt;/u&gt;
+</pre>
+              </div>
+
+              <div id="br-tag" class="pt-4">
+                <h3>The <code>br</code> Tag</h3>
+                <p>The <code>br</code> tag is used to create line breaks in an HTML document.</p>
+              </div>
+
+              <div id="big-small-tags" class="pt-4">
+                <h3>The <code>big</code> and <code>small</code> Tags</h3>
+                <p>We can make the text a bit larger or smaller using <code>big</code> and <code>small</code> tags
+                  respectively.</p>
+                <pre>
+&lt;big&gt;This is big&lt;/big&gt;
+&lt;small&gt;This is small&lt;/small&gt;
+</pre>
+              </div>
+
+              <div id="sub-sup-tags" class="pt-4">
+                <h3>Subscript and Superscript</h3>
+                <p>We can add subscript and superscript in HTML as follows:</p>
+                <pre>
+&lt;sub&gt;This is Subscript&lt;/sub&gt;
+&lt;sup&gt;This is Superscript&lt;/sup&gt;
+</pre>
+                <sub>This</sub> is subscript &
+                <sup>This</sup> is superscript
+              </div>
+
+              <div id="pre-tag" class="pt-4">
+                <h3>The <code>pre</code> Tag</h3>
+                <p>HTML always ignores extra spaces and newlines. To display text exactly as written, we use the
+                  <code>pre</code>
+                  tag.
+                </p>
+                <pre>
+&lt;pre&gt;
+    This    is  written
+    using pre
+    tag
+&lt;/pre&gt;
+</pre>
+              </div>
+
+              <div id="chapter-2-practice-set" class="pt-5">
+                <h2>Chapter 2 - Practice Set</h2>
+
+                <ol>
+                  <li>
+                    <strong>Create an HTML page with a heading (title heading), a primary heading and a subheading.
+                      Which
+                      tags did you use?</strong>
+                    <p>
+                      For the page, I used the following HTML tags:
+                    <ul>
+                      <li><code>&lt;title&gt;</code> for the browser title bar</li>
+                      <li><code>&lt;h1&gt;</code> for the primary heading</li>
+                      <li><code>&lt;h3&gt;</code> for the subheading</li>
+                    </ul>
+                    Here’s an example:
+                    </p>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Title Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is the Main Heading&lt;/h1&gt;
+  &lt;h3&gt;This is the Subheading&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                  </li>
+
+                  <li>
+                    <strong>Create a page with 5 wallpaper images taken from the internet.</strong>
+                    <p>
+                      You can use the <code>&lt;img&gt;</code> tag with direct image URLs from the internet. Example:
+                    </p>
+                    <pre>
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper1" alt="Wallpaper 1"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper2" alt="Wallpaper 2"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper3" alt="Wallpaper 3"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper4" alt="Wallpaper 4"&gt;
+&lt;img src="https://source.unsplash.com/random/300x200?wallpaper5" alt="Wallpaper 5"&gt;
+</pre>
+                  </li>
+
+                  <li>
+                    <strong>Use <code>br</code> and <code>hr</code> tags to display a piece of text with line
+                      breaks.</strong>
+                    <p>
+                      You can use <code>&lt;br&gt;</code> for a new line and <code>&lt;hr&gt;</code> to insert a
+                      horizontal
+                      line.
+                    </p>
+                    <pre>
+This is line one.&lt;br&gt;
+This is line two.&lt;br&gt;
+&lt;hr&gt;
+This is after the horizontal line.
+</pre>
+                  </li>
+
+                  <li>
+                    <strong>Try to write the following chemical equation using HTML: C + O<sub>2</sub> →
+                      CO<sub>2</sub></strong>
+                    <p>Use the <code>&lt;sub&gt;</code> tag to write subscripts:</p>
+                    <pre>
+C + O&lt;sub&gt;2&lt;/sub&gt; → CO&lt;sub&gt;2&lt;/sub&gt;
+</pre>
+                    <p><strong>Output:</strong> C + O<sub>2</sub> → CO<sub>2</sub></p>
+                  </li>
+
+                  <li>
+                    <strong>Try to write a Wikipedia-like article using HTML.</strong>
+                    <p>Here's a basic example of a Wikipedia-style article:</p>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Albert Einstein - Wikipedia&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Albert Einstein&lt;/h1&gt;
+  &lt;p&gt;Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics.&lt;/p&gt;
+  &lt;h2&gt;Early Life&lt;/h2&gt;
+  &lt;p&gt;Einstein was born in the Kingdom of Württemberg in the German Empire on 14 March 1879.&lt;/p&gt;
+  &lt;h2&gt;Contributions&lt;/h2&gt;
+  &lt;p&gt;Einstein is best known for his equation E = mc&lt;sup&gt;2&lt;/sup&gt; and for winning the Nobel Prize in Physics in 1921.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+
+
+
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Content for Item 3...</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>Content for Item 3-1...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>Content for Item 3-2...</p>
+            </div>
+
+            <!-- Chapter 3 Content -->
+            <div id="chapter-3" class="pt-5">
+              <h2>Chapter 3 - Creating a Page Layout</h2>
+
+              <p>When we use the right tag in the right place, it results in a better page layout, better indexing by
+                search
+                engines,
+                and a better user experience. We use the following tags to get the job done:</p>
+
+              <div id="website-layout" class="pt-4">
+                <h3>Website Layout</h3>
+                <pre>
+&lt;header&gt;
+&lt;main&gt;
+&lt;footer&gt;
+</pre>
+              </div>
+
+              <div id="main-tag" class="pt-4">
+                <h3>Inside the <code>&lt;main&gt;</code> Tag</h3>
+                <pre>
+&lt;main&gt; → The main opening tag
+&lt;section&gt; → A page section
+&lt;article&gt; → A self-contained content block
+&lt;aside&gt; → Content aside from the main content (e.g., ads)
+&lt;/main&gt; → The main closing tag
+</pre>
+                <p>
+                  Creating a page like this is not mandatory, but it creates a readable and structured layout. Also, it
+                  is
+                  useful
+                  for SEO.
+                </p>
+              </div>
+
+              <div id="link-attributes" class="pt-4">
+                <h3>Link Attributes</h3>
+                <pre>
+&lt;a href="/contact"&gt;Contact Us&lt;/a&gt; → Opens in the same tab
+
+&lt;a href="/contact" target="_blank"&gt;Contact Us&lt;/a&gt; → Opens in a new tab
+</pre>
+
+                <p>
+                  We can place any content inside an anchor tag (like images, headings, etc.).<br>
+                  If the page is inside a directory, make sure to link it correctly.<br>
+                  <span class="note">The same applies to the <code>&lt;img&gt;</code> tag as well.</span>
+                </p>
+
+                <p>We can add links to images like this:</p>
+                <pre>
+&lt;a href="/about"&gt;
+  &lt;img src="image.jpg" width="120" alt="About Image"&gt;
+&lt;/a&gt;
+</pre>
+                <p><span class="note">Height will be set automatically</span></p>
+              </div>
+
+              <div id="div-tag" class="pt-4">
+                <h3>The <code>&lt;div&gt;</code> Tag</h3>
+                <p>
+                  The <code>&lt;div&gt;</code> tag is often used as a container for other elements.<br>
+                  It is a block-level element. <span class="note">Always takes full width</span>
+                </p>
+              </div>
+
+              <div id="span-tag" class="pt-4">
+                <h3>The <code>&lt;span&gt;</code> Tag</h3>
+                <p>
+                  The <code>&lt;span&gt;</code> tag is an inline container.<br>
+                  <span class="note">Takes as much width as necessary</span>
+                </p>
+              </div>
+
+              <div id="chapter-3-practice-set" class="pt-5">
+                <h2>Chapter 3 - Practice Set</h2>
+
+                <ol>
+                  <li>
+                    <strong>Create an SEO-friendly website using HTML.</strong>
+                    <p>Use semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                      <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.
+                    </p>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;&lt;/header&gt;
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;About Me&lt;/h2&gt;
+      &lt;p&gt;I am a web developer...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Projects&lt;/h2&gt;
+      &lt;p&gt;Here are some of my projects...&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;© 2025 My Website&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                  </li>
+
+                  <li>
+                    <strong>Create an HTML page which opens Google when clicked on an image.</strong>
+                    <pre>
+&lt;a href="https://www.google.com" target="_blank"&gt;
+  &lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="200"&gt;
+&lt;/a&gt;
+</pre>
+                  </li>
+
+                  <li>
+                    <strong>Create a website that bookmarks your 5 most used websites. Links should open in a new
+                      tab.</strong>
+                    <pre>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com" target="_blank"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com" target="_blank"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://chat.openai.com" target="_blank"&gt;ChatGPT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.reddit.com" target="_blank"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- Chapter 4 Content -->
+            <div id="chapter-4" class="pt-5">
+              <h2>Chapter 4 - Lists, Tables & Forms</h2>
+
+              <div id="lists" class="pt-4">
+                <h3>Lists</h3>
+                <p>Lists are used to display content that represents a group of related items.</p>
+                <p>HTML provides ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists to
+                  organize content in bullet or numbered formats.</p>
+              </div>
+
+              <div id="unordered-list" class="pt-4">
+                <h3>Unordered List</h3>
+                <p>An unordered list displays items with bullet points. Each item is wrapped in a
+                  <code>&lt;li&gt;</code>
+                  tag.</p>
+                <pre>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+              </div>
+
+              <div id="tables" class="pt-4">
+                <h3>Tables</h3>
+                <p>The <code>&lt;table&gt;</code> tag is used to define tables in HTML. It is used to format and display
+                  tabular
+                  data.</p>
+                <ul>
+                  <li><code>&lt;tr&gt;</code> – defines a table row</li>
+                  <li><code>&lt;td&gt;</code> – defines table data (cell)</li>
+                  <li><code>&lt;th&gt;</code> – defines a table header (cell)</li>
+                  <li><code>&lt;caption&gt;</code> – adds a caption/title to the table</li>
+                  <li><code>&lt;thead&gt;</code> – wraps the header section of a table</li>
+                  <li><code>&lt;tbody&gt;</code> – wraps the body section of a table</li>
+                </ul>
+
+                <p>Tables organize data into rows and columns using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,
+                  <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> tags.
+                </p>
+                <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+              </div>
+
+              <div id="colspan-attribute" class="pt-4">
+                <h3>Colspan Attribute</h3>
+                <p>The <code>colspan</code> attribute merges columns in a table. It's added to a <code>&lt;td&gt;</code>
+                  or <code>&lt;th&gt;</code>.</p>
+                <pre>
+&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;
+    </pre>
+              </div>
+
+              <div id="html-forms" class="pt-4">
+                <h3>HTML Forms</h3>
+
+                <p>An HTML form is used to collect input from the user. The <code>&lt;form&gt;</code> tag is used for
+                  this
+                  purpose:
+                </p>
+                <pre>
+&lt;form&gt;
+    --Elements of the Form--
+&lt;/form&gt;</pre>
+                <p>There are different form elements for different types of user input:</p>
+                <ul>
+                  <li><strong>Input element</strong>: can be of types like text, checkbox, radio, button, submit, or
+                    file
+                  </li>
+                  <li><strong>Textarea element</strong>: defines a multi-line text input; <code>cols</code> and
+                    <code>rows</code>
+                    attributes control the size
+                  </li>
+                  <li><strong>Select element</strong>: defines a dropdown list</li>
+                </ul>
+
+                <div class="note">
+                  Note: You don't have to remember all the tags; with practice, you'll memorize them naturally.
+                </div>
+
+                <p>Forms collect user input using elements like <code>&lt;input&gt;</code>,
+                  <code>&lt;textarea&gt;</code>,
+                  and <code>&lt;button&gt;</code>.</p>
+                <pre>
+&lt;form&gt;
+  &lt;input type="text" placeholder="Name" /&gt;
+  &lt;input type="email" placeholder="Email" /&gt;
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+              </div>
+
+              <div id="embedding-videos" class="pt-4">
+                <h3>Embedding Videos</h3>
+                <p>Use the <code>&lt;video&gt;</code> tag to embed videos. You can specify controls, autoplay, and more.
+                </p>
+                <pre>
+&lt;video controls width="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </pre>
+              </div>
+
+              <div id="video-attributes" class="pt-4">
+                <h3>Attributes for Video</h3>
+                <p>You can use the following attributes with the <code>&lt;video&gt;</code> tag:</p>
+                <ul>
+                  <li><code>controls</code> – Shows play, pause, and volume buttons</li>
+                  <li><code>autoplay</code> – Starts playing automatically</li>
+                  <li><code>loop</code> – Repeats the video</li>
+                  <li><code>muted</code> – Starts the video with sound off</li>
+                  <li><code>poster</code> – Sets an image to show before the video plays</li>
+                </ul>
+              </div>
+
+              <div id="chapter-4-practice-set" class="pt-5">
+                <h2>Chapter 4 - Practice Set</h2>
+                <p>
+                  1. Create an HTML page with video embedded inside it.<br>
+                  2. Replace this video in 1 with a YouTube video.<br>
+                  3. Create an HTML form for a travel website to book a vacation.<br>
+                  4. Create a table displaying score of players in a match using HTML.
+                </p>
+
+                <h3>Practice 1: Embedded Video</h3>
+                <video src="video.mp4" controls width="500">
+                  Your browser does not support the video tag.
+                </video>
+                <pre>&lt;video src="video.mp4" controls width="500"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</pre>
+
+                <h3>Practice 2: YouTube Embedded Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bAPUzHCeS8s"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+
+                <pre>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bAPUzHCeS8s" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+
+                <h3>Practice 3: Travel Booking Form</h3>
+                <form>
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="destination">Destination:</label>
+                  <select id="destination" name="destination">
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="london">London</option>
+                    <option value="newyork">New York</option>
+                  </select>
+
+                  <label for="date">Travel Date:</label>
+                  <input type="date" id="date" name="date">
+
+                  <label for="requests">Special Requests:</label>
+                  <textarea id="requests" name="requests" rows="4"></textarea>
+
+                  <input type="submit" value="Book Now" style="margin-top: 1rem;">
+                </form>
+                <pre>&lt;form&gt;
+    &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+
+    &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;label for="destination"&gt;Destination:&lt;/label&gt;
+    &lt;select id="destination" name="destination"&gt;
+        &lt;option value="paris"&gt;Paris&lt;/option&gt;
+        &lt;option value="tokyo"&gt;Tokyo&lt;/option&gt;
+        &lt;option value="london"&gt;London&lt;/option&gt;
+        &lt;option value="newyork"&gt;New York&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for="date"&gt;Travel Date:&lt;/label&gt;
+    &lt;input type="date" id="date" name="date"&gt;
+
+    &lt;label for="requests"&gt;Special Requests:&lt;/label&gt;
+    &lt;textarea id="requests" name="requests" rows="4"&gt;&lt;/textarea&gt;
+
+    &lt;input type="submit" value="Book Now" style="margin-top: 1rem;"&gt;
+&lt;/form&gt;
+</pre>
+
+                <h3>Practice 4: Player Score Table</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Player</th>
+                      <th>Runs</th>
+                      <th>Wickets</th>
+                      <th>Strike Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Virat Kohli</td>
+                      <td>82</td>
+                      <td>0</td>
+                      <td>140.3</td>
+                    </tr>
+                    <tr>
+                      <td>Rohit Sharma</td>
+                      <td>64</td>
+                      <td>0</td>
+                      <td>128.5</td>
+                    </tr>
+                    <tr>
+                      <td>Hardik Pandya</td>
+                      <td>47</td>
+                      <td>2</td>
+                      <td>135.0</td>
+                    </tr>
+                    <tr>
+                      <td>Jasprit Bumrah</td>
+                      <td>12</td>
+                      <td>3</td>
+                      <td>60.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <pre>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Player&lt;/th&gt;
+            &lt;th&gt;Runs&lt;/th&gt;
+            &lt;th&gt;Wickets&lt;/th&gt;
+            &lt;th&gt;Strike Rate&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Virat Kohli&lt;/td&gt;
+            &lt;td&gt;82&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;140.3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rohit Sharma&lt;/td&gt;
+            &lt;td&gt;64&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;128.5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Hardik Pandya&lt;/td&gt;
+            &lt;td&gt;47&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;135.0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jasprit Bumrah&lt;/td&gt;
+            &lt;td&gt;12&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;60.0&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+              </div>
+            </div>
+
+            <!-- Chapter 5 - HTML & SEO -->
+            <div id="chapter-5">
+              <h2>Chapter 5 - HTML & SEO</h2>
+              <p>
+                SEO (Search Engine Optimization) is crucial for improving your website’s visibility on search engines.
+                In
+                this chapter, we explore how HTML can contribute to better on-page SEO practices.
+              </p>
+            </div>
+
+            <div id="types-of-seo">
+              <h3>Types of SEO</h3>
+              <ul>
+                <li><strong>On-Page SEO</strong>: Optimizing content and HTML source code (keywords, meta tags,
+                  headings).
+                </li>
+                <li><strong>Off-Page SEO</strong>: Link building, social media sharing, external signals.</li>
+                <li><strong>Technical SEO</strong>: Improving backend aspects like site speed, mobile-friendliness, and
+                  crawlability.</li>
+              </ul>
+            </div>
+
+            <div id="html-onpage-seo">
+              <h3>HTML Techniques for On-Page SEO</h3>
+              <p>Some important techniques include:</p>
+              <ul>
+                <li>Using proper heading structure with <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</li>
+                <li>Adding <code>&lt;meta name="description"&gt;</code> and <code>&lt;title&gt;</code> tags.</li>
+                <li>Using <code>&lt;alt&gt;</code> attributes for images.</li>
+                <li>Clean and semantic HTML using <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                  <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, etc.
+                </li>
+                <li>Adding internal links with descriptive anchor text.</li>
+              </ul>
+              <p>Here are some practical steps HTML developers can take to improve on-page SEO:</p>
+              <ul>
+                <li><strong>Title Tag:</strong> Create a concise and descriptive <code>&lt;title&gt;</code> that
+                  includes
+                  relevant keywords.</li>
+                <li><strong>Meta Description:</strong> Add a meta tag to summarize the page content for search engines
+                  and
+                  users.</li>
+              </ul>
+              <pre>&lt;meta name="description" content="Learn essential HTML techniques for improving SEO on your website."&gt;</pre>
+
+              <ul>
+                <li><strong>URL Slug:</strong> Use clean, readable, and keyword-rich URLs (e.g.,
+                  <code>/seo-tips</code>).
+                </li>
+                <li><strong>Meta Keywords (optional):</strong> Though outdated, still supported by some systems.</li>
+              </ul>
+              <pre>&lt;meta name="keywords" content="HTML, SEO, web development"&gt;</pre>
+
+              <ul>
+                <li><strong>Meta Author Tag:</strong> Specify the page author.</li>
+              </ul>
+              <pre>&lt;meta name="author" content="Rishabh"&gt;</pre>
+
+              <ul>
+                <li><strong>Favicon:</strong> Add a recognizable favicon for branding.</li>
+              </ul>
+              <pre>&lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;</pre>
+
+              <ul>
+                <li><strong>Optimize Media:</strong> Compress images and minify CSS/JS to improve page load speed.</li>
+                <li><strong>Clean Code:</strong> Remove unused HTML, CSS, and JavaScript files.</li>
+                <li><strong>Alt Text:</strong> Provide descriptive <code>alt</code> attributes for all images to improve
+                  accessibility and SEO.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>© Rishabh Kumar 2025</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
