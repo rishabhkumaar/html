@@ -250,3 +250,49 @@ td {
 .about__description p {
   margin-bottom: 1.2rem;
 }
+
+/* === Footer Section === */
+.footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 4px solid #00ffff;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffa500;
+}
+
+.footer__social-icons {
+  margin-top: 1rem;
+}
+
+.footer__social-icons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #ccc;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__social-icons a:hover {
+  color: #00ffff;
+  transform: scale(1.1);
+}
+
+.footer small {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
