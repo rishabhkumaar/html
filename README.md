@@ -112,3 +112,9 @@ Thanks to:
 > “Start where you are. Use what you have. Do what you can.” – Arthur Ashe
 
 ---
+
+## Also Check Out
+
+[Markdown Quick Recap](https://github.com/rishabhkumaar/markdown)
+
+---
